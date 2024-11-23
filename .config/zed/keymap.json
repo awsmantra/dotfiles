@@ -1,0 +1,78 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/keys
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle",
+      "cmd-t": "terminal_panel::ToggleFocus",
+      "cmd-n": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "space g r": ["task::Spawn", { "task_name": "Run Go Program" }],
+      "space g d": ["task::Spawn", { "task_name": "Run Go Tidy" }],
+      "space g t": ["task::Spawn", { "task_name": "Run Go Test" }],
+      "space g f": ["task::Spawn", { "task_name": "Run Go Test Function" }],
+      "space g i": ["task::Spawn", { "task_name": "Run Go Init" }],
+      "space c r": ["task::Spawn", { "task_name": "Run Cargo Build And Run" }],
+      "space c t": ["task::Spawn", { "task_name": "Run Cargo Test" }],
+      "space c f": ["task::Spawn", { "task_name": "Run Cargo Test Function" }]
+    }
+  },
+  {
+    "context": "terminal",
+    "bindings": {
+      "cmd-t": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "space p": "editor::Format",
+      "space space": "file_finder::Toggle",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem",
+      "space v": "pane::SplitRight",
+      "space w": "pane::CloseActiveItem",
+      "space h": "workspace::ActivateNextPane",
+      "space l": "workspace::ActivatePreviousPane",
+      "space r t": "task::Spawn"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "alt-h": "vim::Left",
+      "alt-l": "vim::Right",
+      "alt-j": "vim::Down",
+      "alt-k": "vim::Up"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock"
+    }
+  }
+]
