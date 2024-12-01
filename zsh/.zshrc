@@ -9,6 +9,8 @@ alias ls="colorls"
 alias lt="ls -altr"
 alias cls="clear"
 alias cd="z"
+# alias yazi='yazi -- --config-dir ~/dotfiles/.config/yazi'
+export YAZI_CONFIG_HOME="~/dotfiles/.config/yazi"
 
 PS1='~:'
 
