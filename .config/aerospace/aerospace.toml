@@ -98,10 +98,10 @@ alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+alt-cmd-h = 'focus left'
+alt-cmd-j = 'focus down'
+alt-cmd-k = 'focus up'
+alt-cmd-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'
@@ -209,51 +209,79 @@ alt-shift-l = ['join-with right', 'mode main']
 # up = 'volume up'
 # shift-down = ['volume set 0', 'mode main']
 
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.mail'
+# run = 'move-node-to-workspace A'
+#
+
+#Arc browser
 [[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = "move-node-to-workspace T"
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace A'
 
-
+#Zen browser
 [[on-window-detected]]
 if.app-id = 'org.mozilla.com.zen.browser'
 run = 'move-node-to-workspace B'
 
-
+#Craft
 [[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = 'move-node-to-workspace S'
+if.app-id = 'com.lukilabs.lukiapp'
+run = 'move-node-to-workspace C' 
 
-
+#Dynobase
 [[on-window-detected]]
-if.app-id = 'org.mozilla.firefox'
-run = 'move-node-to-workspace 1'
+if.app-id = 'com.todesktop.220811zswf4aj4x'
+run = 'move-node-to-workspace D'
 
-
+#dbever
 [[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = 'move-node-to-workspace A'
+if.app-id = 'org.jkiss.dbeaver.core.product'
+run = 'move-node-to-workspace D'
 
-
+#Ghostty Terminal
 [[on-window-detected]]
-if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace Z'
-
+if.app-id = 'com.mitchellh.ghostty'
+run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = 'move-node-to-workspace F'
 
-
+#Outlook
 [[on-window-detected]]
-if.app-id = 'com.lukilabs.lukiapp'
-run = 'move-node-to-workspace C'
+if.app-id = 'com.microsoft.Outlook'
+run = 'move-node-to-workspace O'
 
-
+#Postman
 [[on-window-detected]]
-if.app-id = 'com.todesktop.220811zswf4aj4x'
-run = 'move-node-to-workspace D'
+if.app-id = 'com.postmanlabs.mac'
+run = 'move-node-to-workspace P'
 
-
+#Slack
 [[on-window-detected]]
-if.app-id = 'org.jkiss.dbeaver.core.product'
-run = 'move-node-to-workspace D'
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace S'
+
+#Wezterm Terminal
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+run = "move-node-to-workspace T"
+
+#Zed Editor
+[[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+run = 'move-node-to-workspace Z'
+
+#Firefox
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace 1'
+
+#Chrome
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = 'move-node-to-workspace 2'
+
+ 

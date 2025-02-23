@@ -82,6 +82,15 @@ vim.keymap.set('i', '<A-l>', '<Right>', { desc = 'Move right in insert mode' })
 vim.keymap.set('i', '<A-j>', '<Down>', { desc = 'Move down in insert mode' })
 vim.keymap.set('i', '<A-k>', '<Up>', { desc = 'Move up in insert mode' })
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'go',
+  callback = function()
+    vim.opt_local.tabstop = 4 -- width of a tab character
+    vim.opt_local.shiftwidth = 4 -- width when indenting
+    vim.opt_local.expandtab = false -- use tabs instead of spaces
+  end,
+})
+
 return {
   require 'custom.plugins.nvim-tree',
   require 'custom.plugins.lazygit',

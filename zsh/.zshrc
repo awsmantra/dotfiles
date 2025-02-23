@@ -24,6 +24,7 @@ export GOPATH=$HOME/go
 export GOROOT=/usr/local/go  # This is the default Go installation directory
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# export XDG_CONFIG_HOME=$HOME/dotfiles/.config/ghostty/config
 
 
 #export PS1='\[\033[01;32m\]\u \[\033[01;34m\][\W]\[\033[00m\] $ '
