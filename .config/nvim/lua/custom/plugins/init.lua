@@ -14,22 +14,22 @@ vim.opt.list = false
 vim.opt.swapfile = false
 
 -- noice keymapping
-vim.keymap.set('n', '<leader>nl', function()
-  require('noice').cmd 'last'
-end)
-
-vim.keymap.set('n', '<leader>nh', function()
-  require('noice').cmd 'history'
-end)
-
-vim.keymap.set('n', '<leader>nd', function()
-  require('noice').cmd 'dismiss'
-end)
-
-vim.keymap.set('n', '<leader>na', function()
-  require('noice').cmd 'all'
-end)
-
+-- vim.keymap.set('n', '<leader>nl', function()
+--   require('noice').cmd 'last'
+-- end)
+--
+-- vim.keymap.set('n', '<leader>nh', function()
+--   require('noice').cmd 'history'
+-- end)
+--
+-- vim.keymap.set('n', '<leader>nd', function()
+--   require('noice').cmd 'dismiss'
+-- end)
+--
+-- vim.keymap.set('n', '<leader>na', function()
+--   require('noice').cmd 'all'
+-- end)
+--
 -- nvimtree Key mappings
 -- vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Toggle file explorer' })
 vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<CR>', { desc = 'Focus file explorer' })
@@ -95,7 +95,7 @@ return {
   require 'custom.plugins.nvim-tree',
   require 'custom.plugins.lazygit',
   require 'custom.plugins.conform',
-  require 'custom.plugins.noice',
+  -- require 'custom.plugins.noice',
   require 'custom.plugins.flash',
   require 'custom.plugins.ufo',
   require 'custom.plugins.trouble',

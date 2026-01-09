@@ -18,10 +18,10 @@
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
       "space g r": ["task::Spawn", { "task_name": "Run Go Program" }],
       "space g d": ["task::Spawn", { "task_name": "Run Go Tidy" }],
       "space g t": ["task::Spawn", { "task_name": "Run Go Test" }],
@@ -45,7 +45,7 @@
       "space p": "editor::Format",
       "space space": "file_finder::Toggle",
       "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePrevItem",
+      "shift-h": "pane::ActivatePreviousItem",
       "space v": "pane::SplitRight",
       "space w": "pane::CloseActiveItem",
       "space h": "workspace::ActivateNextPane",

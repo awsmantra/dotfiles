@@ -222,13 +222,18 @@ run = 'move-node-to-workspace A'
 
 #Zen browser
 [[on-window-detected]]
-if.app-id = 'org.mozilla.com.zen.browser'
+if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace B'
+
+#Visual Studio Code
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace C' 
 
 #Craft
 [[on-window-detected]]
 if.app-id = 'com.lukilabs.lukiapp'
-run = 'move-node-to-workspace C' 
+run = 'move-node-to-workspace 3' 
 
 #Dynobase
 [[on-window-detected]]
